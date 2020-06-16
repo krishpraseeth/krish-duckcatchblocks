@@ -165,5 +165,6 @@ duck.setPosition(Math.randomRange(0, scene.screenWidth()), Math.randomRange(0, s
 
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
     duck.setPosition(Math.randomRange(0, scene.screenWidth()), Math.randomRange(0, scene.screenHeight()))
 })
